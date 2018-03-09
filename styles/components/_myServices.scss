@@ -1,0 +1,40 @@
+.myServices {
+    min-height: 800px;
+    background-image: url('../images/aboutBackground.pngs');
+}
+
+.myServices h1,
+.myServices p {
+    text-align: center;
+}
+
+.servicesContainer {
+    display: flex;
+    float: left
+}
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    width: 530px;
+    justify-content: space-between;
+}
+
+
+.language {
+    display: flex;
+    height: 270px;
+    width: 170px;
+}
+
+.languageContainer {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.languageContainer .svg-inline--fa,
+.languageContainer i{
+    margin-bottom: 71px;
+}
+

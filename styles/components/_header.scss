@@ -1,0 +1,22 @@
+.headerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100px;
+    align-items: center;
+}
+
+.headerContact {
+    display: flex;
+    align-items: center;
+}
+
+.headerContact a {
+    padding-right: 10px;
+    border-right: 1px solid #FFFFFF;
+}
+
+.headerContact h3 {
+    padding-left: 10px;
+    border-left: 1px solid #FFFFFF;
+}

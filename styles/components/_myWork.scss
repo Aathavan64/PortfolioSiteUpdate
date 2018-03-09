@@ -1,0 +1,49 @@
+.myWork {
+    min-height: 800px;
+    background-image: url("../images/myServicesBackground.jpg");
+}
+
+.myWorkContainer{
+    display: flex;
+}
+
+.project {
+    width: 25%;
+    height: 800px;
+    padding-top: 350px;
+}
+
+.projectLink {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.projectLink h2{
+    margin-bottom: 20px;
+}
+
+.projectOne.backGroundOn {
+    background-image: url("../images/westerBros.jpg");
+    background-attachment: center;
+    background-size: cover;
+}
+
+.projectTwo.backGroundOn {
+    background-image: url("../images/movieWatchList.jpg");
+    background-attachment: center;
+    background-size: cover;
+}
+
+.projectThree.backGroundOn {
+    background-image: url("../images/bitRegret.jpg");
+    background-attachment: center;
+    background-size: cover;
+}
+
+.projectFour.backGroundOn {
+    background-image: url("../images/over.jpg");
+    background-attachment: center;
+    background-size: cover;
+}
+

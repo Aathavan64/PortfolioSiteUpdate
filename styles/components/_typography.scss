@@ -1,0 +1,53 @@
+body {
+    color: #fcffff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+// This section for header
+
+.headerContact a,
+.headerContact h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+//This section for Landing
+.companyName {
+    text-align: center;
+}
+.landingContainer h1 {
+    font-size: 2.625rem;
+    text-transform: uppercase;
+}
+
+.landingContainer h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+//THis section for about
+
+.whoAmI {
+    text-align: right;
+    font-size: 5.14rem;
+    text-transform: uppercase;
+}
+
+.aboutInfo h1 {
+    font-size: 1.3125rem;
+    letter-spacing: 2px;
+    color: #629fd1;
+}
+
+.greyP {
+    font-family: 'Open Sans', sans-serif;
+    color: #abbcc8;
+    line-height: 150%;
+    font-size: 1rem;
+}
+
+
+// font-family: 'Open Sans', sans-serif;
