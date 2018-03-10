@@ -1,8 +1,9 @@
 .landing {
-    min-height: 800px;
+    min-height: 100vh;
     // background-image: url('../images/landingBackground.png');
     background-position: center;
-    background: url('../images/landingBackground.png'), linear-gradient( to top , black 10px, black 30px);
+    background: url('../images/landingBackground.png');
+    background-size: cover;
 }
 
 .landingContainer {

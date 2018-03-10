@@ -184,6 +184,10 @@ body {
   line-height: 150%;
   font-size: 1rem; }
 
+.language .svg-inline--fa,
+.language i {
+  font-size: 5rem; }
+
 button {
   padding: 0;
   border: none;
@@ -203,7 +207,7 @@ button {
 .headerNav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   min-height: 100px;
   align-items: center; }
 
@@ -220,9 +224,10 @@ button {
   border-left: 1px solid #FFFFFF; }
 
 .landing {
-  min-height: 800px;
+  min-height: 100vh;
   background-position: center;
-  background: url("../images/landingBackground.png"), linear-gradient(to top, black 10px, black 30px); }
+  background: url("../images/landingBackground.png");
+  background-size: cover; }
 
 .landingContainer {
   width: 30%;
@@ -292,15 +297,17 @@ button {
   z-index: 9; }
 
 .myWork {
-  min-height: 800px;
-  background-image: url("../images/myServicesBackground.jpg"); }
+  min-height: 100vh;
+  background-image: url("../images/myServicesBackground.jpg");
+  background-position: center;
+  background-size: cover; }
 
 .myWorkContainer {
   display: flex; }
 
 .project {
   width: 25%;
-  height: 800px;
+  height: 100vh;
   padding-top: 350px; }
 
 .projectLink {
@@ -333,11 +340,19 @@ button {
 
 .myServices {
   min-height: 800px;
-  background-image: url("../images/aboutBackground.pngs"); }
+  background-image: url("../images/aboutBackground.pngs");
+  padding-top: 75px;
+  padding-bottom: 185px; }
 
 .myServices h1,
-.myServices p {
+.myServices h2 {
   text-align: center; }
+
+.myServices h1 {
+  margin-bottom: 27px; }
+
+.myServices h2 {
+  margin-bottom: 66px; }
 
 .servicesContainer {
   display: flex;
@@ -347,22 +362,66 @@ button {
   display: flex;
   flex-wrap: wrap;
   width: 530px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-right: 70px; }
 
 .language {
   display: flex;
   height: 270px;
-  width: 170px; }
+  width: 170px;
+  background-color: #081e34;
+  margin-bottom: 10px; }
 
 .languageContainer {
   margin: auto;
   text-align: center;
   text-transform: uppercase; }
 
-.languageContainer .svg-inline--fa,
-.languageContainer i {
-  margin-bottom: 71px; }
+.skill {
+  height: 43px;
+  display: flex;
+  padding-left: 26px;
+  border-left: 5px solid;
+  margin-bottom: 7px;
+  align-items: center; }
+
+.skill:nth-child(1) {
+  border-color: #FDD873; }
+
+.skill:nth-child(2) {
+  border-color: #F58F4C; }
+
+.skill:nth-child(3) {
+  border-color: #F25A52; }
+
+.skill:nth-child(4) {
+  border-color: #E73958; }
+
+.skill:nth-child(5) {
+  border-color: #461C40; }
 
 footer {
   min-height: 448px;
-  background-image: url("../images/footerBackground.png"); }
+  background-image: linear-gradient(rgba(7, 23, 39, 0.9), rgba(7, 23, 39, 0.7)), url("../images/footer.jpg");
+  background-size: cover;
+  background-position: center; }
+
+footer .wrapper {
+  display: flex;
+  min-height: 448px; }
+
+.footerMain {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footerMain img {
+  display: block;
+  margin-bottom: 25px; }
+
+.footerMain button {
+  margin-bottom: 50px; }
+
+.footerMain .socialIcons {
+  margin-bottom: 50px; }

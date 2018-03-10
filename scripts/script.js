@@ -24,9 +24,7 @@ backGroundToggle('Three');
 //         });
 // };
 
-let myEfficientFn = debounce(function() {
 
-}, 250;
 
 
 function debounce(wait) {
