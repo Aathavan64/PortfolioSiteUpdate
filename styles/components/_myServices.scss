@@ -74,3 +74,16 @@
 .skill:nth-child(5) {
     border-color: #461C40;
 }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .servicesContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .languages {
+        margin: 0;
+        align-self: center;
+    }
+}

@@ -56,3 +56,31 @@
 .outLineContent {
     z-index: 9;
 }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .aboutContainer {
+        flex-wrap: wrap;
+    }
+
+    .whoAmI,
+    .aboutContainer img {
+        width: 50%;
+        margin: 0;
+    }
+
+    .infoProfessionalisim {
+        right: 0;
+    }
+
+    .nameLine,
+    .outLine {
+        visibility: hidden;
+    }
+
+    .bottomAboutP {
+        margin-bottom: 100px;
+    }
+
+
+}

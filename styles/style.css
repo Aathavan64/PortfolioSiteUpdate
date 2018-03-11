@@ -135,7 +135,7 @@ body {
   background: #071727; }
 
 .wrapper {
-  width: 1166px;
+  width: 91%;
   margin: 0 auto; }
 
 h1, h2, h3, h4, p {
@@ -144,6 +144,16 @@ h1, h2, h3, h4, p {
 a {
   color: #fcffff;
   text-decoration: none; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .wrapper {
+    width: 100%; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 92%; } }
 
 body {
   color: #fcffff;
@@ -223,11 +233,11 @@ button {
   padding-left: 10px;
   border-left: 1px solid #FFFFFF; }
 
-.landing {
+body .landing {
   min-height: 100vh;
-  background-position: center;
   background: url("../images/landingBackground.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .landingContainer {
   width: 30%;
@@ -248,6 +258,7 @@ button {
 .landingContainer .blueButton {
   margin-bottom: 67px; }
 
+/* Portrait tablet and small desktops */
 .about {
   background-image: url("../images/aboutBackground.png");
   min-height: 800px; }
@@ -295,6 +306,22 @@ button {
 
 .outLineContent {
   z-index: 9; }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-wrap: wrap; }
+  .whoAmI,
+  .aboutContainer img {
+    width: 50%;
+    margin: 0; }
+  .infoProfessionalisim {
+    right: 0; }
+  .nameLine,
+  .outLine {
+    visibility: hidden; }
+  .bottomAboutP {
+    margin-bottom: 100px; } }
 
 .myWork {
   min-height: 100vh;
@@ -399,6 +426,15 @@ button {
 
 .skill:nth-child(5) {
   border-color: #461C40; }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .servicesContainer {
+    flex-direction: column;
+    width: 100%; }
+  .languages {
+    margin: 0;
+    align-self: center; } }
 
 footer {
   min-height: 448px;
