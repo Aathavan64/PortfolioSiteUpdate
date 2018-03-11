@@ -84,3 +84,13 @@
 
 
 }
+
+@media (max-width: 480px){
+    .whoAmI {
+        display: none;
+    }
+
+    .about img {
+        width: 100%;
+    }
+}

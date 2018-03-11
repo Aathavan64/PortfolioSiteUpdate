@@ -145,6 +145,9 @@ a {
   color: #fcffff;
   text-decoration: none; }
 
+.logo {
+  width: 200px; }
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .wrapper {
@@ -197,6 +200,12 @@ body {
 .language .svg-inline--fa,
 .language i {
   font-size: 5rem; }
+
+.socialIcons a {
+  font-size: 2rem; }
+
+.footerMain p {
+  font-family: 'Open Sans', sans-serif; }
 
 button {
   padding: 0;
@@ -323,6 +332,12 @@ body .landing {
   .bottomAboutP {
     margin-bottom: 100px; } }
 
+@media (max-width: 480px) {
+  .whoAmI {
+    display: none; }
+  .about img {
+    width: 100%; } }
+
 .myWork {
   min-height: 100vh;
   background-image: url("../images/myServicesBackground.jpg");
@@ -364,6 +379,14 @@ body .landing {
   background-image: url("../images/over.jpg");
   background-attachment: center;
   background-size: cover; }
+
+@media (max-width: 480px) {
+  .myWorkContainer {
+    flex-wrap: wrap; }
+  .project {
+    width: 50%;
+    height: 50vh;
+    padding-top: 100px; } }
 
 .myServices {
   min-height: 800px;
@@ -436,6 +459,10 @@ body .landing {
     margin: 0;
     align-self: center; } }
 
+@media (max-width: 480px) {
+  .languages {
+    width: auto; } }
+
 footer {
   min-height: 448px;
   background-image: linear-gradient(rgba(7, 23, 39, 0.9), rgba(7, 23, 39, 0.7)), url("../images/footer.jpg");
@@ -461,3 +488,6 @@ footer .wrapper {
 
 .footerMain .socialIcons {
   margin-bottom: 50px; }
+
+.socialIcons a {
+  font-size: 2rem; }
