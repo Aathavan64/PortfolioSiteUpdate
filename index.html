@@ -161,7 +161,20 @@
     <footer>
         <div class="wrapper">
             <div class="footerMain">
-                <button>Get in Touch</button>
+                <div class="formHolder" >
+                    <button>Get in Touch</button>
+                    <form action=“https://formspree.io/your@email.com” method=“POST”>
+                        <div class="formNameInfo">
+                            <input class="firstName" type=“text” name=“firstName” placeholder="First Name" >
+                            <input type=“text” name=“lastName”
+                            placeholder="Last Name">
+                        </div>
+                        <input type=“email” class="formEmail" name=“_replyto” placeholder="Email">
+                        <input type="text" class="formInfo" placeholder="Description" >
+                        <button type="submit">Submit</button>
+                        <!-- <input type=“submit” value="Submit"> -->
+                    </form>
+                </div>
                 <img class="logo" src="images/logo.png" alt="">
                 <div class="socialIcons">
                     <a href=""><i class="fab fa-linkedin"></i></a>

@@ -461,7 +461,9 @@ body .landing {
 
 @media (max-width: 480px) {
   .languages {
-    width: auto; } }
+    width: auto; }
+  .myServices {
+    padding-bottom: 75px; } }
 
 footer {
   min-height: 448px;
@@ -489,5 +491,38 @@ footer .wrapper {
 .footerMain .socialIcons {
   margin-bottom: 50px; }
 
-.socialIcons a {
-  font-size: 2rem; }
+.formEmail {
+  width: 100%; }
+
+.formNameInfo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+
+.footerMain input,
+.footerMain button {
+  border: none;
+  margin-bottom: 15px;
+  background-color: darkslategrey;
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: .8rem;
+  border-radius: 3px; }
+
+.footerMain .formInfo {
+  width: 100%;
+  padding-bottom: 200px; }
+
+.footerMain button {
+  padding-right: 10px; }
+
+.formHolder {
+  position: relative; }
+
+.footerMain form {
+  position: absolute; }
+
+.firstName {
+  margin-right: 10px; }
