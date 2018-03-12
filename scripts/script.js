@@ -43,6 +43,8 @@ function debounce(wait) {
     };
 };
 
+$('.landing').parallax({ imageSrc: '../images/landingBackground.png' });
+
 
 
 

@@ -159,33 +159,31 @@
         </div>
     </section>
     <footer>
-        <div class="wrapper">
-            <div class="footerMain">
-                <div class="formHolder" >
-                    <button>Get in Touch</button>
-                    <form action=“https://formspree.io/your@email.com” method=“POST”>
-                        <div class="formNameInfo">
-                            <input class="firstName" type=“text” name=“firstName” placeholder="First Name" >
-                            <input type=“text” name=“lastName”
-                            placeholder="Last Name">
-                        </div>
-                        <input type=“email” class="formEmail" name=“_replyto” placeholder="Email">
-                        <input type="text" class="formInfo" placeholder="Description" >
-                        <button type="submit">Submit</button>
-                        <!-- <input type=“submit” value="Submit"> -->
-                    </form>
+        <div class="footerMain">
+            <input type="checkbox" name="toggle" class="toggleBox" id="toggle" />
+            <label for="toggle">Get in Touch</label>
+            <form action=“https://formspree.io/your@email.com” method=“POST”>
+                <div class="formNameInfo">
+                    <input class="firstName" type=“text” name=“firstName” placeholder="First Name" >
+                    <input type=“text” name=“lastName”
+                    placeholder="Last Name">
                 </div>
-                <img class="logo" src="images/logo.png" alt="">
-                <div class="socialIcons">
-                    <a href=""><i class="fab fa-linkedin"></i></a>
-                    <a href=""><i class="fab fa-github-square"></i></a>
-                    <a href=""><i class="fab fa-twitter-square"></i></a>
-                </div>
-                <p>"To err is human – and to blame it on a computer is even more so." - My inspector </p>
+                <input type=“email” class="formEmail" name=“_replyto” placeholder="Email">
+                <input type="text" class="formInfo" placeholder="Description" >
+                <button type="submit">Submit</button>
+                <!-- <input type=“submit” value="Submit"> -->
+            </form>
+            <img class="logo" src="images/logo.png" alt="">
+            <div class="socialIcons">
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-github-square"></i></a>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
             </div>
+            <p>"To err is human – and to blame it on a computer is even more so." - My inspector </p>
         </div>
     </footer>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="/path/to/parallax.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
     <script src="scripts/script.js"></script>
 </body>
