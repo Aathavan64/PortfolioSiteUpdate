@@ -1,6 +1,6 @@
 .about {
     background-image: url("../images/aboutBackground.png");
-    min-height: 800px;
+    min-height: 100vh;
     padding-top: 25px;
 }
 
@@ -12,7 +12,8 @@
 }
 
 .aboutContainer img {
-    margin-right: 8.5%;
+    margin-right: 2.5%;
+    height: 80vh;
 }
 
 .nameLine {
@@ -58,6 +59,15 @@
     z-index: 9;
 }
 
+
+.sliderArrow {
+    display: flex;
+}
+
+.about a {
+    margin: auto;
+    padding-top: 50px;
+}
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
     .aboutContainer {

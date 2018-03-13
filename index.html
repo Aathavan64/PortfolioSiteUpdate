@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
 </head>
@@ -16,8 +17,8 @@
             <div class="wrapper">
                 <div class="headerNav">
                     <div class="headerContact">
-                        <a href="#?">LinkedIn</a>
-                        <h3>Aathavan.Bagawan@gmail.com</h3>
+                        <a href="https://www.linkedin.com/in/aathavanbagawan/">LinkedIn</a>
+                        <h3>Aathavan@Aathavan.codes</h3>
                     </div>
                 </div>
             </div>
@@ -29,11 +30,11 @@
                 <h1 className="nameBottom">Codes</h1>
             </div>
             <h2>For Your Business</h2>
-            <button class="blueButton">Contact Me!</button>
-            <button>Arrow?</button>
+            <!-- <button class="blueButton">Contact Me!</button> -->
+            <a href="#about">Arrow</a>
         </section>
     </section>
-    <section class="about">
+    <section class="about" id="about" >
         <div class="wrapper clearfix">
             <div class="aboutContainer">
                 <div class="whoAmI">
@@ -58,8 +59,11 @@
                 </div>
             </div>
         </div>
+            <div class="sliderArrow">
+                <a href="#myWork">Arrow</a>
+            </div>
     </section>
-    <section class="myWork">
+    <section class="myWork" id="myWork">
         <div class="myWorkContainer">
             <div class="project projectOne backGroundOff">
                 <a href="" class="projectLink projectOneLink">
@@ -95,9 +99,9 @@
             </div>
         </div>
     </section>
-    <section class="myServices">
+    <section class="myServices" id="myServices">
         <h2>My Skills</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, beatae?</h2>
+        <p class="greyP" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, beatae?</p>
         <div class="wrapper clearfix">
             <div class="servicesContainer clearfix">
                 <div class="languages">
@@ -161,23 +165,22 @@
     <footer>
         <div class="footerMain">
             <input type="checkbox" name="toggle" class="toggleBox" id="toggle" />
-            <label for="toggle">Get in Touch</label>
-            <form action=“https://formspree.io/your@email.com” method=“POST”>
+            <label for="toggle">Click to get in touch!</label>
+            <form action=“https://formspree.io/aathavan@gmail.com” method=“POST”>
                 <div class="formNameInfo">
                     <input class="firstName" type=“text” name=“firstName” placeholder="First Name" >
-                    <input type=“text” name=“lastName”
-                    placeholder="Last Name">
+                    <input type=“text” name=“lastName” placeholder="Last Name">
                 </div>
                 <input type=“email” class="formEmail" name=“_replyto” placeholder="Email">
-                <input type="text" class="formInfo" placeholder="Description" >
+                <textarea name="message" placeholder="Your message"></textarea>
                 <button type="submit">Submit</button>
                 <!-- <input type=“submit” value="Submit"> -->
             </form>
             <img class="logo" src="images/signature.png" alt="">
             <div class="socialIcons">
-                <a href=""><i class="fab fa-linkedin"></i></a>
-                <a href=""><i class="fab fa-github-square"></i></a>
-                <a href=""><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/aathavanbagawan/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Aathavan64"><i class="fab fa-github-square"></i></a>
+                <a href="https://twitter.com/AathavanBagawan"><i class="fab fa-twitter-square"></i></a>
             </div>
             <p>"To err is human – and to blame it on a computer is even more so." - My inspector </p>
         </div>
@@ -186,5 +189,6 @@
     <script src="/path/to/parallax.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
     <script src="scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
 </body>
 </html>

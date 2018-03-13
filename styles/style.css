@@ -161,7 +161,7 @@ a {
 body {
   color: #fcffff;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Rubik', sans-serif; }
 
 .headerContact a,
 .headerContact h3 {
@@ -172,34 +172,50 @@ body {
   text-align: center; }
 
 .landingContainer h1 {
-  font-size: 2.625rem;
+  font-size: 2.75rem;
   text-transform: uppercase; }
 
 .landingContainer h2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 400;
   text-transform: uppercase; }
 
 .whoAmI {
   text-align: right;
-  font-size: 5.14rem;
-  text-transform: uppercase; }
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  line-height: 5.7rem; }
 
 .aboutInfo h1 {
-  font-size: 1.3125rem;
+  font-size: 1.438rem;
   letter-spacing: 2px;
-  color: #629fd1; }
+  color: #629fd1;
+  text-transform: uppercase; }
 
 .greyP {
   font-family: 'Open Sans', sans-serif;
   color: #abbcc8;
   line-height: 150%;
-  font-size: 1rem; }
+  font-size: .75rem; }
+
+.outLineContent h3 {
+  font-size: .875rem; }
+
+.myServices h2 {
+  font-size: 1.625rem; }
+
+.myServices .greyP {
+  text-align: center; }
 
 .language .svg-inline--fa,
 .language i {
   font-size: 5rem; }
+
+.language .svg-inline--fa,
+.language i,
+.language p {
+  color: #669FCF; }
 
 .socialIcons a {
   font-size: 2rem; }
@@ -246,7 +262,8 @@ body .landing {
   min-height: 100vh;
   background: url("../images/landingBackground.png");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
 
 .landingContainer {
   width: 30%;
@@ -270,7 +287,7 @@ body .landing {
 /* Portrait tablet and small desktops */
 .about {
   background-image: url("../images/aboutBackground.png");
-  min-height: 800px;
+  min-height: 100vh;
   padding-top: 25px; }
 
 .aboutContainer {
@@ -280,7 +297,8 @@ body .landing {
   align-items: center; }
 
 .aboutContainer img {
-  margin-right: 8.5%; }
+  margin-right: 2.5%;
+  height: 80vh; }
 
 .nameLine {
   height: 5px;
@@ -317,6 +335,13 @@ body .landing {
 .outLineContent {
   z-index: 9; }
 
+.sliderArrow {
+  display: flex; }
+
+.about a {
+  margin: auto;
+  padding-top: 50px; }
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .aboutContainer {
@@ -343,7 +368,8 @@ body .landing {
   min-height: 100vh;
   background-image: url("../images/myServicesBackground.jpg");
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .myWorkContainer {
   display: flex; }
@@ -351,12 +377,20 @@ body .landing {
 .project {
   width: 25%;
   height: 100vh;
-  padding-top: 350px; }
+  display: flex; }
 
 .projectLink {
-  margin: 0 auto;
   text-align: center;
-  display: block; }
+  margin: auto;
+  padding: 10px 10px;
+  border-radius: 4px;
+  position: relative;
+  bottom: 30%; }
+
+.projectLink:hover {
+  background-color: #071727;
+  padding: 10px 10px;
+  border-radius: 4px; }
 
 .projectLink h2 {
   margin-bottom: 20px; }
@@ -386,23 +420,21 @@ body .landing {
     flex-wrap: wrap; }
   .project {
     width: 50%;
-    height: 50vh;
-    padding-top: 100px; } }
+    height: 50vh; } }
 
 .myServices {
   min-height: 800px;
   background-image: url("../images/aboutBackground.pngs");
-  padding-top: 75px;
-  padding-bottom: 185px; }
+  padding-top: 50px; }
 
 .myServices h1,
 .myServices h2 {
   text-align: center; }
 
-.myServices h1 {
-  margin-bottom: 27px; }
-
 .myServices h2 {
+  margin-bottom: 25px; }
+
+.myServices .greyP {
   margin-bottom: 66px; }
 
 .servicesContainer {
@@ -470,7 +502,8 @@ footer {
   min-height: 448px;
   background-image: linear-gradient(rgba(7, 23, 39, 0.9), rgba(7, 23, 39, 0.7)), url("../images/footer.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
 
 footer .wrapper {
   display: flex;
@@ -495,6 +528,11 @@ footer .wrapper {
 .footerMain .socialIcons {
   margin-bottom: 50px; }
 
+.socialIcons a {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 2rem; }
+
 .formEmail {
   width: 100%; }
 
@@ -504,7 +542,8 @@ footer .wrapper {
   justify-content: space-between; }
 
 .footerMain input,
-.footerMain button {
+.footerMain button,
+.footerMain textarea {
   border: none;
   margin-bottom: 15px;
   background-color: darkslategrey;
@@ -515,12 +554,18 @@ footer .wrapper {
   font-size: .8rem;
   border-radius: 3px; }
 
-.footerMain .formInfo {
+.footerMain textarea {
   width: 100%;
   padding-bottom: 100px; }
 
 .footerMain button {
   padding-right: 10px; }
+
+.footerMain label {
+  padding: 16px 30px;
+  background-color: darkslategrey;
+  border-radius: 4px;
+  margin-bottom: 10px; }
 
 .footerMain form {
   position: absolute;

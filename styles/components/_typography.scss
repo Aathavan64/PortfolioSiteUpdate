@@ -1,7 +1,7 @@
 body {
     color: #fcffff;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 // This section for header
@@ -17,13 +17,13 @@ body {
     text-align: center;
 }
 .landingContainer h1 {
-    font-size: 2.625rem;
+    font-size: 2.75rem;
     text-transform: uppercase;
 }
 
 .landingContainer h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -32,28 +32,49 @@ body {
 
 .whoAmI {
     text-align: right;
-    font-size: 5.14rem;
+    font-size: 4.5rem;
     text-transform: uppercase;
+    line-height: 5.7rem;
 }
 
 .aboutInfo h1 {
-    font-size: 1.3125rem;
+    font-size: 1.438rem;
     letter-spacing: 2px;
     color: #629fd1;
+    text-transform: uppercase;
 }
 
 .greyP {
     font-family: 'Open Sans', sans-serif;
     color: #abbcc8;
     line-height: 150%;
-    font-size: 1rem;
+    font-size: .75rem;
 }
 
+.outLineContent h3 {
+    font-size: .875rem;
+}
+
+
 //this section for skills
+.myServices h2 {
+    font-size: 1.625rem;
+}
+
+.myServices .greyP {
+    text-align: center;
+}
+
+
 .language .svg-inline--fa,
-// .language p,
 .language i {
     font-size: 5rem;
+}
+
+.language .svg-inline--fa,
+.language i,
+.language p {
+    color:#669FCF
 }
 
 //this section for footer

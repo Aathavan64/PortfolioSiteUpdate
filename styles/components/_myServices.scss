@@ -1,8 +1,7 @@
 .myServices {
     min-height: 800px;
     background-image: url('../images/aboutBackground.pngs');
-    padding-top: 75px;
-    padding-bottom: 185px;
+    padding-top: 50px;
 }
 
 .myServices h1,
@@ -10,11 +9,11 @@
     text-align: center;
 }
 
-.myServices h1 {
-    margin-bottom: 27px;
+.myServices h2 {
+    margin-bottom: 25px;
 }
 
-.myServices h2 {
+.myServices .greyP {
     margin-bottom: 66px;
 }
 

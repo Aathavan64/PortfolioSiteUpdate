@@ -4,6 +4,7 @@ body .landing {
     background: url('../images/landingBackground.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .landingContainer {

@@ -3,6 +3,7 @@
     background-image: url("../images/myServicesBackground.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .myWorkContainer{
@@ -12,13 +13,22 @@
 .project {
     width: 25%;
     height: 100vh;
-    padding-top: 350px;
+    display: flex;
 }
 
 .projectLink {
-    margin: 0 auto;
     text-align: center;
-    display: block;
+    margin: auto;
+    padding: 10px 10px;
+    border-radius: 4px;
+    position: relative;
+    bottom: 30%;
+}
+
+.projectLink:hover {
+    background-color: #071727;
+    padding: 10px 10px;
+    border-radius: 4px;
 }
 
 .projectLink h2{
@@ -49,6 +59,7 @@
     background-size: cover;
 }
 
+
 @media (max-width: 480px) {
     .myWorkContainer {
         flex-wrap: wrap;
@@ -57,7 +68,6 @@
     .project {
         width: 50%;
         height: 50vh;
-        padding-top: 100px;
     }
 }
 
