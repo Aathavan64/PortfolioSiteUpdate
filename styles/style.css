@@ -149,6 +149,9 @@ a {
 .logo {
   width: 294px; }
 
+.fa-long-arrow-alt-down {
+  font-size: 2rem; }
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .wrapper {
@@ -621,4 +624,5 @@ footer .wrapper {
     display: none; }
   .footerMain > form {
     display: initial;
-    position: static; } }
+    position: static;
+    width: 80%; } }
