@@ -89,8 +89,17 @@
 
 @media (max-width: 480px) {
     .languages {
-        width: auto;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
+
+    .language {
+        width: 49%;
+    }
+
+    .language{ 
+    margin-bottom: 10px;}
 
     .myServices {
         padding-bottom: 75px;

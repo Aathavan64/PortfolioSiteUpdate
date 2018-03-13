@@ -1,5 +1,5 @@
 .myWork {
-    min-height: 100vh;
+    min-height: 80vh;
     background-image: url("../images/myServicesBackground.jpg");
     background-position: center;
     background-size: cover;
@@ -12,27 +12,37 @@
 
 .project {
     width: 25%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
+    flex-direction: column;
+    
 }
 
 .projectLink {
-    text-align: center;
-    margin: auto;
+    // text-align: center;
+    text-align: left;
+    // margin: auto;
     padding: 10px 10px;
     border-radius: 4px;
-    position: relative;
-    bottom: 30%;
+    // position: relative;
+    // bottom: 30%;
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 200px;
+    
 }
 
-.projectLink:hover {
-    background-color: #071727;
-    padding: 10px 10px;
-    border-radius: 4px;
-}
+// .projectLink:hover {
+//     background-color: #071727;
+//     padding: 10px 10px;
+//     border-radius: 4px;
+// }
 
 .projectLink h2{
     margin-bottom: 20px;
+}
+
+.projectLink p {
+    margin-bottom: 10px;
 }
 
 .projectOne.backGroundOn {
