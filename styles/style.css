@@ -136,6 +136,7 @@ body {
 
 .wrapper {
   width: 91%;
+  max-width: 1170px;
   margin: 0 auto; }
 
 h1, h2, h3, h4, p {
@@ -151,12 +152,14 @@ a {
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .wrapper {
-    width: 100%; } }
+    width: 100%;
+    max-width: 940px; } }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .wrapper {
-    width: 92%; } }
+    width: 92%;
+    max-width: 706px; } }
 
 body {
   color: #fcffff;

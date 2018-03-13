@@ -8,6 +8,7 @@ body {
 
 .wrapper{
     width: 91%;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -28,6 +29,7 @@ a {
 @media (max-width: 940px) {
     .wrapper {
         width: 100%;
+        max-width: 940px;
     }
 }
 
@@ -35,5 +37,6 @@ a {
 @media (max-width: 768px) {
     .wrapper {
         width: 92%;
+        max-width: 706px;
     }
 }
