@@ -10,6 +10,7 @@ body {
 .headerContact h3 {
     font-size: 1rem;
     font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
 }
 
 //This section for Landing
@@ -17,13 +18,15 @@ body {
     text-align: center;
 }
 .landingContainer h1 {
-    font-size: 2.75rem;
+    font-size: 3.75rem;
+    font-weight: 900;
+    line-height: 60px;
     text-transform: uppercase;
 }
 
 .landingContainer h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -32,13 +35,15 @@ body {
 
 .whoAmI {
     text-align: right;
-    font-size: 4.5rem;
+    font-size: 6.25rem;
+    font-weight: 700;
     text-transform: uppercase;
-    line-height: 5.7rem;
+    line-height: 6.75rem;
 }
 
 .aboutInfo h1 {
-    font-size: 1.438rem;
+    font-size: 1.875rem;
+    font-weight: 900;
     letter-spacing: 2px;
     color: #629fd1;
     text-transform: uppercase;
@@ -48,17 +53,20 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #abbcc8;
     line-height: 150%;
-    font-size: .75rem;
+    font-size: .875rem;
 }
 
 .outLineContent h3 {
-    font-size: .875rem;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 
 //this section for skills
 .myServices h2 {
-    font-size: 1.625rem;
+    font-size: 2.25rem;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .myServices .greyP {
