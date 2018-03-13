@@ -132,10 +132,11 @@ footer .wrapper {
         order: 1;
         margin-top: 10px;
         margin-bottom: 300px;
+        display: none;
     }
 
     .footerMain>form {
-        top: 400px;
-        width: 360px;
+        display: initial;
+        position: static;
     }
 }
