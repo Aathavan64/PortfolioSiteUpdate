@@ -195,7 +195,7 @@ body {
   line-height: 6.75rem; }
 
 .aboutInfo h1 {
-  font-size: 1.875rem;
+  font-size: 2rem;
   font-weight: 900;
   letter-spacing: 2px;
   color: #629fd1;
@@ -205,10 +205,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #abbcc8;
   line-height: 150%;
-  font-size: .875rem; }
+  font-size: 1rem; }
 
 .outLineContent h3 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700; }
 
 .myServices h2 {
@@ -227,6 +227,13 @@ body {
 .language i,
 .language p {
   color: #669FCF; }
+
+.skill p,
+.language p {
+  font-size: .875rem;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: white; }
 
 .socialIcons a {
   font-size: 2rem; }
