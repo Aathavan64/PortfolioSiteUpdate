@@ -2,18 +2,30 @@ $(document).ready(function () {
     $('a').smoothScroll();
 });
 
-
-function backGroundToggle(x) {
-    $(`.project${x}Link`).hover(function () {
-        $(`.project${x}`).toggleClass('backGroundOff backGroundOn');
-        console.log('hhihi');
+function openForm() {
+    $(".toggleButton").click(function() {
+        $('.formContainer').toggleClass('formOn');
+        console.log('turning on');
     })
+    
 };
 
-backGroundToggle('One');
-backGroundToggle('Two');
-backGroundToggle('Three');
-backGroundToggle('Four');
+openForm();
+
+
+
+
+// function backGroundToggle(x) {
+//     $(`.project${x}Link`).hover(function () {
+//         $(`.project${x}`).toggleClass('backGroundOff backGroundOn');
+//         console.log('hhihi');
+//     })
+// };
+
+// backGroundToggle('One');
+// backGroundToggle('Two');
+// backGroundToggle('Three');
+// backGroundToggle('Four');
 
 
 // function backGroundFade(x) {

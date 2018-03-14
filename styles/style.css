@@ -147,7 +147,7 @@ a {
   text-decoration: none; }
 
 .logo {
-  width: 294px; }
+  width: 320px; }
 
 .fa-long-arrow-alt-down {
   font-size: 2rem; }
@@ -179,7 +179,7 @@ body {
   text-align: center; }
 
 .landingContainer h1 {
-  font-size: 3.75rem;
+  font-size: 3rem;
   font-weight: 900;
   line-height: 60px;
   text-transform: uppercase; }
@@ -219,7 +219,7 @@ body {
   font-weight: 700; }
 
 .projectLink p {
-  font-size: 1rem;
+  font-size: .8rem;
   font-family: 'Open Sans', sans-serif; }
 
 .myServices h2 {
@@ -268,24 +268,53 @@ button {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
-.headerNav {
+.contactButton {
+  padding: 11px 30px;
+  border-radius: 4px;
+  background-color: #071727;
+  color: white; }
+
+header .wrapper {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-end; }
+
+.headerNav {
   justify-content: flex-end;
   min-height: 100px;
-  align-items: center; }
+  align-items: center;
+  margin-right: 50px;
+  min-width: 300px;
+  text-align: right; }
 
 .headerContact {
   display: flex;
   align-items: center; }
 
 .headerContact a {
-  padding-right: 10px;
-  border-right: 1px solid #FFFFFF; }
+  padding-left: 10px;
+  border-left: 1px solid #FFFFFF;
+  margin-bottom: 10px; }
 
 .headerContact h3 {
   padding-left: 10px;
+  margin-right: 10px;
   border-left: 1px solid #FFFFFF; }
+
+.dropdown {
+  position: relative; }
+
+.dropdownContent {
+  background: linear-gradient(to top, #071727, #071727);
+  display: none; }
+
+.dropdown:hover .dropdownContent {
+  display: block; }
+
+@media (max-width: 480px) {
+  .dropdownContent {
+    display: block; }
+  .contactButton {
+    display: none; } }
 
 body .landing {
   min-height: 100vh;
@@ -302,7 +331,7 @@ body .landing {
   align-items: center; }
 
 .landingContainer img {
-  margin-bottom: 129px; }
+  margin-top: 140px; }
 
 .companyName {
   margin-bottom: 28px; }
@@ -391,66 +420,105 @@ body .landing {
   .whoAmI {
     display: none; }
   .about img {
-    width: 100%; } }
+    width: 100%;
+    object-fit: cover; } }
 
 .myWork {
-  min-height: 80vh;
+  min-height: 100vh;
   background-image: url("../images/myServicesBackground.jpg");
-  background-position: center;
+  background-position: 50% 75%;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1280px;
+  position: relative; }
+  .myWork:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #071727, #071727);
+    opacity: .7; }
 
-.myWorkContainer {
-  display: flex; }
+.projectContainer {
+  width: 23%;
+  display: flex;
+  align-items: flex-end; }
 
 .project {
-  width: 25%;
-  height: 80vh;
-  display: flex;
-  flex-direction: column; }
+  width: 100%;
+  height: 100vh; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); }
 
 .projectLink {
   text-align: left;
-  padding: 10px 10px;
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.7);
-  min-height: 200px; }
+  display: block;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  z-index: 9; }
 
 .projectLink h2 {
-  margin-bottom: 20px; }
+  margin-bottom: 8px; }
 
 .projectLink p {
-  margin-bottom: 10px; }
+  margin-bottom: 25px; }
 
-.projectOne.backGroundOn {
-  background-image: url("../images/westerBros.jpg");
-  background-attachment: center;
+.projectOne {
+  background: url("../images/westerBros.jpg");
   background-size: cover; }
 
-.projectTwo.backGroundOn {
+.projectTwo {
   background-image: url("../images/movieWatchList.jpg");
-  background-attachment: center;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 50% 31%; }
 
-.projectThree.backGroundOn {
+.projectThree {
   background-image: url("../images/bitRegret.jpg");
-  background-attachment: center;
+  background-size: cover;
+  background-position: 50% 100%; }
+
+.projectFour {
+  background-image: url("../images/over.jpg");
   background-size: cover; }
 
-.projectFour.backGroundOn {
-  background-image: url("../images/over.jpg");
-  background-attachment: center;
-  background-size: cover; }
+@media (max-width: 940px) {
+  .myWork {
+    flex-wrap: wrap; }
+  .projectContainer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 49%;
+    height: 100vh;
+    margin-bottom: 10px; }
+  .projectOne {
+    background-position: 50% 31%; }
+  .projectTwo {
+    background-position: 50% 50%; }
+  .projectThree {
+    background-position: 50% 114%; }
+  .projectFour {
+    background-position: 50% 50%; } }
 
 @media (max-width: 480px) {
-  .myWorkContainer {
-    flex-wrap: wrap; }
-  .project {
-    width: 50%;
-    height: 50vh; } }
+  .projectContainer {
+    width: 80%;
+    margin-bottom: 25px; } }
 
 .myServices {
-  min-height: 800px;
+  padding-bottom: 50px;
   background-image: url("../images/aboutBackground.pngs");
   padding-top: 50px; }
 
@@ -477,7 +545,7 @@ body .landing {
 
 .language {
   display: flex;
-  height: 270px;
+  height: 170px;
   width: 170px;
   background-color: #081e34;
   margin-bottom: 10px; }
@@ -600,18 +668,42 @@ footer .wrapper {
   border-radius: 4px;
   margin-bottom: 10px; }
 
+.formOff {
+  display: none; }
+
+.name {
+  width: 100%; }
+
+.formContainerInner {
+  margin: auto; }
+
+.formOn {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(7, 23, 39, 0.9);
+  align-items: center; }
+
 .footerMain form {
-  position: absolute;
-  width: 400px;
-  top: 25px;
-  right: -400px;
-  transition: right 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94); }
+  margin: auto;
+  width: 300px;
+  height: 300px; }
+
+.closeButton {
+  background: none; }
+
+form button {
+  display: block; }
 
 .firstName {
   margin-right: 10px; }
 
 .toggleBox:checked ~ form {
-  right: 10px; }
+  text-transform: uppercase; }
 
 .toggleBox {
   visibility: hidden; }

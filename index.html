@@ -15,18 +15,29 @@
     <section class="landing">
         <header>
             <div class="wrapper">
-                <div class="headerNav">
+                <div class="dropdown headerNav">
+                    <button class="contactButton" >Contact</button>
+                    <div class="dropdownContent">
+                        <div class="headerContact">
+                            <a href="https://www.linkedin.com/in/aathavanbagawan/">LinkedIn</a>
+                        </div>
+                        <div class="headerContact">
+                            <h3><i class="fas fa-envelope"></i></h3>
+                            <p>Aathavan@Aathavan.codes</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="headerNav">
                     <div class="headerContact">
                         <a href="https://www.linkedin.com/in/aathavanbagawan/">LinkedIn</a>
                         <h3>Aathavan@Aathavan.codes</h3>
                     </div>
-                </div>
+                </div> -->
             </div>
         </header>
         <section class="landingContainer">
-            <img class="logo" src="images/signature.png" alt="">
             <div class="companyName">
-                <h1 className="nameTop">Aathavan</h1>
+                <img class="logo" src="images/signature.png" alt="">
                 <h1 className="nameBottom">Codes</h1>
             </div>
             <h2>For Your Business</h2>
@@ -39,8 +50,8 @@
             <div class="aboutContainer">
                 <div class="whoAmI">
                     <h2>Who</h2>
-                    <h2>Am</h2>
-                    <h2>I</h2>
+                    <h2>Am   I</h2>
+                    <!-- <h2>A</h2> -->
                 </div>
                 <img src="/images/profilePic.jpg" alt="">
                 <div class="aboutInfo">
@@ -68,44 +79,41 @@
             </div>
     </section>
     <section class="myWork" id="myWork">
-        <div class="myWorkContainer">
-            <div class="project projectOne backGroundOff">
-                <a href="https://wester-bros.firebaseapp.com" class="projectLink projectOneLink">
-                    <h2>WesterBros</h2>
-                    <p>React</p>
-                    <p>Firebase</p>
-                </a>
-            </div>
-            <div class="project projectTwo backGroundOff">
-                <a href="https://project6-2296b.firebaseapp.com" class="projectLink projectTwoLink">
-                    <h2>Movie Watch List</h2>
-                    <p>React</p>
-                    <p>Firebase</p>
-                    <p>API Handling</p>
-                </a>
-            </div>
-            <div class="project projectThree backGroundOff">
-                <a href="https://shouldacouldawoulda.github.io/shouldaCouldaWoulda" class="projectLink
-                projectThreeLink">
-                    <h2>BitRegret</h2>
-                    <p>API Handling</p>
-                    <p>JavaScript/jQuery</p>
-                </a>
-            </div>
-            <div class="project projectFour backGroundOff">
-                <a href="https://aathavan64.github.io/Over-conversion/" class="projectLink
-                projectFourLink">
-                    <h2>Over</h2>
-                    <p>FlexBox</p>
-                    <p>Sass</p>
-                    <p>Responsive Design</p>
-                </a>
+        <div class="projectContainer projectOne ">
+            <div class="projectLink">
+                <h2>WesterBros</h2>
+                <p>React / Firebase</p>
+                <a href="https://wester-bros.fir
+                ebaseapp.com">View Live <i class="fas fa-desktop"></i></a>
             </div>
         </div>
+        <div class="projectContainer projectTwo">
+            <div class="projectLink">
+                <h2>Movie Watch List</h2>
+                <p>React / Firebase / API Handling</p>
+                <a href="https://project6-2296b.firebaseapp.com">View Live <i class="fas fa-desktop"></i></a>
+            </div>
+        </div>
+        <div class="projectContainer projectThree">
+            <div class="projectLink">
+                <h2>BitRegret</h2>
+                <p>API Handling / JavaScript / jQuery</p>
+                <a href="https://shouldacouldawoulda.github.io/shouldaCouldaWoulda">View Live <i class="fas fa-desktop"></i></a>
+            </div>
+        </div>
+        <div class="projectContainer projectFour">
+            <div class="projectLink">
+                <h2>Over</h2>
+                <p>FlexBox / Sass / Responsive Design</p>
+                <a href="https://aathavan64.github.io/Over-conversion/">View Live <i class="fas fa-desktop"></i></a>
+            </div>
+        </div>
+        <!-- <div class="overlay">
+        </div> -->
     </section>
     <section class="myServices" id="myServices">
         <h2>My Skills</h1>
-        <p class="greyP" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, beatae?</p>
+        <p class="greyP" >Here is a list of the skills I possess as well as the languages I am proficient in.</p>
         <div class="wrapper clearfix">
             <div class="servicesContainer clearfix">
                 <div class="languages">
@@ -168,18 +176,19 @@
     </section>
     <footer>
         <div class="footerMain">
-            <input type="checkbox" name="toggle" class="toggleBox" id="toggle" />
-            <label for="toggle">Click to get in touch!</label>
-            <form action="https://formspree.io/aathavan.bagawan@gmail.com" method="POST">
-                <!-- <div class="formNameInfo"> -->
-                    <input class="firstName" type="text" name="firstName" placeholder="First Name" >
-                    <input type="text" name="lastName" placeholder="Last Name">
-                <!-- </div> -->
-                <input type="email" class="formEmail" name="_replyto" placeholder="Email">
-                <textarea name="message" placeholder="Your message"></textarea>
-                <!-- <button type="submit">Submit</button> -->
-                <input type="submit" value="Submit">
-            </form>
+            <button class="toggleButton">Contact Me</button>
+            <div class="formContainer formOff">
+                <div class="formContainerInner" >
+                    <button class="toggleButton closeButton" ><i class="fas fa-window-close"></i></button>
+                    <form action="https://formspree.io/aathavan.bagawan@gmail.com" method="POST">
+                        <input class="name" type="text" name="name" placeholder="Name" >
+                        <input type="email" class="formEmail" name="_replyto" placeholder="Email">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                        <!-- <button type="submit">Submit</button> -->
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
             <img class="logo" src="images/signature.png" alt="">
             <div class="socialIcons">
                 <a href="https://www.linkedin.com/in/aathavanbagawan/"><i class="fab fa-linkedin"></i></a>
@@ -190,7 +199,6 @@
         </div>
     </footer>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-    <script src="/path/to/parallax.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
     <script src="scripts/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>

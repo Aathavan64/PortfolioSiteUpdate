@@ -88,16 +88,42 @@ footer .wrapper {
 //     display: flex;
 //     justify-content: center;
 //     overflow: hidden;
-    
-// }
+.formOff {
+    display: none;
+}
+
+.name {
+    width: 100%;
+}
+
+.formContainerInner{
+    margin: auto;
+}
+
+.formOn {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(7,23,39,.9);
+    align-items: center;
+}
 
 .footerMain form {
-    position: absolute;
-    width: 400px;
-    top: 25px;
-    right: -400px;
-    transition: right 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-    
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+.closeButton {
+    background: none;
+}
+
+form button {
+    display: block;
 }
 
 .firstName {
@@ -120,7 +146,7 @@ footer .wrapper {
 // }
 
 .toggleBox:checked ~ form {
-  right: 10px;
+  text-transform: uppercase;
 }
 
 .toggleBox {
