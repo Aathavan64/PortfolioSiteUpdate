@@ -1,71 +1,50 @@
-$(document).ready(function () {
-    $('a').smoothScroll();
+
+$('.Show').click(function () {
+    $('#target').show(500);
+    $('.Show').hide(0);
+    $('.Hide').show(0);
+});
+$('.Hide').click(function () {
+    $('#target').hide(500);
+    $('.Show').show(0);
+    $('.Hide').hide(0);
+});
+$('.toggle').click(function () {
+    $('#target').toggle('slow');
 });
 
-function openForm() {
-    $(".toggleButton").click(function() {
-        $('.formContainer').toggleClass('formOn');
-        console.log('turning on');
-    })
-    
-};
+$('button.movieWatchListScroll').on('click', function () {
+    $.smoothScroll({
+        scrollTarget: '#movieWatchList'
+    });
+    return false;
+});
 
-openForm();
+$('button.bitRegretScroll').on('click', function () {
+    $.smoothScroll({
+        scrollTarget: '#bitRegret'
+    });
+    return false;
+});
 
+$('button.movieWatchListScroll').on('click', function () {
+    $.smoothScroll({
+        scrollTarget: '#movieWatchList'
+    });
+    return false;
+});
 
+$('button.overScroll').on('click', function () {
+    $.smoothScroll({
+        scrollTarget: '#over'
+    });
+    return false;
+});
 
+$('button.westerBrosScroll').on('click', function () {
+    $.smoothScroll({
+        scrollTarget: '#westerBros'
+    });
+    return false;
+});
 
-// function backGroundToggle(x) {
-//     $(`.project${x}Link`).hover(function () {
-//         $(`.project${x}`).toggleClass('backGroundOff backGroundOn');
-//         console.log('hhihi');
-//     })
-// };
-
-// backGroundToggle('One');
-// backGroundToggle('Two');
-// backGroundToggle('Three');
-// backGroundToggle('Four');
-
-
-// function backGroundFade(x) {
-//     $(`.project${x}Link`)
-//         .mouseenter(function () {
-//             $(`.project${x}`).animate({ opacity: 0 }, 0).css('background-image',
-//             `url(../images/project${x}Background.jpg)`).animate({ opacity: 1 }, 2500);
-//             console.log('fadein')
-//         })
-//         .mouseleave(function() {
-//             $(`.project${x}`).animate({ opacity: 1 }, 0).css('background-image',
-//                 `url(../images/project${x}Background.jpg)`).animate({ opacity: 0 }, 2500);
-//             console.log('fadeout')
-//         });
-// };
-
-
-
-
-// function debounce(wait) {
-//     return function(x){
-//         $(`.project${x}Link`)
-//             .mouseenter(function () {
-//                 $(`.project${x}`).animate({ opacity: 0 }, 0).css('background-image',
-//                     `url(../images/project${x}Background.jpg)`).animate({ opacity: 1 }, 2500);
-//                 console.log('fadein')
-//             })
-//             .mouseleave(function () {
-//                 $(`.project${x}`).animate({ opacity: 1 }, 0).css('background-image',
-//                     `url(../images/project${x}Background.jpg)`).animate({ opacity: 0 }, 2500);
-//                 console.log('fadeout')
-//             });  
-//     };
-// };
-
-
-
-
-
-
-
-
-// backGroundFade('Four')

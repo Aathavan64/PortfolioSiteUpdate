@@ -1,0 +1,65 @@
+.about {
+ color: black;
+ background: white;
+}
+
+.about h2 {
+    text-align: center;
+}
+
+.about .aboutMeContainer {
+    display: flex;
+    min-height: 90vh;
+    
+}
+
+.aboutMain {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.headShot {
+    width: 48%;
+    display: flex;
+    background-image: url('../images/redconvert3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.aboutInfo {
+    width: 49.5%;
+}
+
+
+.headShot img {
+    margin: auto;
+    width: 49.5%;
+    border: 3px solid #ac0014;
+    border-radius: 50%;
+}
+
+.aboutInfo button {
+    padding: 2px 5px;
+    background: #ac0014;
+    border-radius: 2px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.aboutInfo .Hide
+{
+    display: block;
+    display: none;
+    width: auto;
+    padding: 5px 5px;
+}
+
+#target {
+
+}

@@ -1,24 +1,11 @@
-button {
-    padding: 0;
-    border: none;
+.projectButtons button {
+    font-size: 1.2rem;
+    color: #D20E25;
+    font-family: 'Pangolin', cursive;
     background: none;
-}
-
-.blueButton {
-    padding: 16px 65px;
-    border-radius: 3px;
-    background: blue;
-    color: #FFFFFF;
-    background-color: #629fd1;
-    font-family: 'Open Sans';
-    font-size: 1rem; 
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.contactButton {
-    padding: 11px 30px;
-    border-radius: 4px;
-    background-color: #071727;
-    color: white;
+    border: none;
+    padding: 0;
+    font-weight: bold;
+    border-bottom:  2px solid #D20e25;
+    margin-bottom: 5px;
 }

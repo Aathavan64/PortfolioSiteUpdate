@@ -1,0 +1,39 @@
+footer {
+    color: black;
+    background-image: url('../images/convertRed4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+footer .wrapper {
+    display: flex;
+    min-height: 50vh;
+}
+
+.footerMain {
+    margin: auto;
+    align-self:left;
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.footerInfo {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.offSetPic,
+.footerInfo {
+    width: 50%;
+}
+
+.offSetPic img {
+    object-fit: contain;
+    object-position: left;
+    max-height: 60vh;
+}
+

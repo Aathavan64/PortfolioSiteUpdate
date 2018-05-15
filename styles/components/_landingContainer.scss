@@ -1,0 +1,88 @@
+.landing {
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.landingBrand {
+    width: 250px;
+    margin-right: 8%;
+    margin-left: auto;
+}
+
+.projectButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.landingInfo {
+    width: 50%;
+}
+
+.landingSkillsContainer h4 {
+    margin-right: 5px;
+    // border: 2px solid #ac0014;
+    padding: 1px 2px;
+    border-radius: 2px;
+    background-color: #ac0014;
+    margin-bottom: 2px;
+}
+
+.landingSocialIcons {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.landingSocialIcons button,
+.landingSocialIcons a {
+    display: block;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+.landingSocialIcons button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.landingSkillsContainer div {
+    display: flex;
+}
+
+.landingLeft {
+    display: flex;
+}
+
+.landingBrand img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.landingInfo>div {
+    margin-bottom: 25px;
+}
+
+@media (max-width: 850px) {
+    .landing {
+        flex-direction: column;
+        align-items: initial;
+        margin-left: 5%
+
+    }
+
+    .landingBrand {
+        margin: auto;
+        align-self: center;
+        margin-bottom: 25px;
+    }
+
+    .landingInfo {
+        width: 100%;
+    }
+}
+

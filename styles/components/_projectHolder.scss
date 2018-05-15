@@ -1,0 +1,79 @@
+.projects {
+    // background: linear-gradient(to bottom, #17284c 0%,#3d64ad 50%);
+    color: black;
+}
+
+.projectLanding {
+    min-height: 5vh;
+    display: flex;
+}
+
+.projectLanding h2 {
+    margin: auto;
+}
+
+.projectHolder {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.pictureAlignedRight .projectPicture {
+    order: 9;
+}
+
+// .projectInfo,
+.projectPicture,
+.projectInfoContainer {
+    width: 49.5%;
+}
+
+.projectInfoContainer {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.projectInfo blockquote {
+    margin: 0;
+}
+
+.projectTitle {
+    display: flex;
+    align-items: center;
+}
+
+.projectTitle img {
+    width: 100px;
+    margin-right: 15px;
+}
+
+.projectPicture .imageBorder,
+.projectInfo {
+    width: 90%;
+}
+
+.projectPicture img {
+    border: 1px solid #ff9648;
+}
+
+.projectPicture .imageBorder {
+    border: 2px solid #ff9648;
+    padding: 7px;
+    background: black;
+}
+
+.projectSkills {
+    display: flex;
+}
+
+.projectSkills h4 {
+    margin-right: 5px;
+    // border: 2px solid #ac0014;
+    padding: 1px 2px;
+    border-radius: 2px;
+    background-color: #ac0014;
+}
+

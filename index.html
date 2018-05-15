@@ -7,194 +7,266 @@
     <title>Aathavan Bagawan Front End Developer</title>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
 </head>
 <body>
     <section class="landing">
-        <header>
-            <div class="wrapper">
-                <div class="dropdown headerNav">
-                    <button class="contactButton" >Contact</button>
-                    <div class="dropdownContent">
-                        <div class="headerContact">
-                            <a href="https://www.linkedin.com/in/aathavanbagawan/">LinkedIn</a>
-                        </div>
-                        <div class="headerContact">
-                            <h3><i class="fas fa-envelope"></i></h3>
-                            <p>Aathavan@Aathavan.codes</p>
-                        </div>
+        <div class="landingBrand">
+            <img src="images/logoLion.png" alt="">
+            <h1>Aathavan Bagawan</h1>
+            <div class="landingSocialIcons">
+                <button>
+                    <i class="fa fas fa-envelope-square"></i>
+                </button>
+                <a href="https://www.linkedin.com/in/aathavanbagawan/">
+                    <i class="fa fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Aathavan64">
+                    <i class="fa fab fa-github-square"></i>
+                </a>
+            </div>
+        </div>
+        <div class="landingInfo">
+            <div class="landingAbout">
+                <h2>Hello, I'm Aathavan</h2>
+                <p>I'm a web developer</p>
+                <a href="">More About Me ></a>
+            </div>
+            <div class="landingProjects">
+                <h2>
+                    Projects
+                </h2>
+                <div class="projectButtons">
+                    <button class="movieWatchListScroll">
+                        Movie Watch List
+                    </button>
+                    <button class="bitRegretScroll">
+                        BitRegret
+                    </button>
+                    <button class="overScroll">
+                        Project: Over
+                    </button>
+                    <button class="westerBrosScroll">
+                        WesterBros
+                    </button>
+                </div>
+                <a href="https://github.com/Aathavan64">More on GitHub></a>
+            </div>
+            <div class="landingSkills">
+                <h2>Skills</h2>
+                <div class="landingSkillsContainer">
+                    <div>
+                        <h4>Javascript</h4>
+                        <h4>Firebase</h4>
+                    </div>
+                    <div>
+                        <h4>React</h4>
+                        <h4>API Handling</h4>
+                    </div>
+                    <div>
+                        <h4>jQuery</h4>
+                        <h4>Version Control (GIT/GITHUB)</h4>
+                    </div>
+                    <div>
+                        <h4>CSS3</h4>
+                        <h4>SASS Preprocessing</h4>
+                    </div>
+                    <div>
+                        <h4>HTML 5</h4>
+                        <h4>Responsive Web-Design / UX</h4>
                     </div>
                 </div>
-                <!-- <div class="headerNav">
-                    <div class="headerContact">
-                        <a href="https://www.linkedin.com/in/aathavanbagawan/">LinkedIn</a>
-                        <h3>Aathavan@Aathavan.codes</h3>
-                    </div>
-                </div> -->
             </div>
-        </header>
-        <section class="landingContainer">
-            <div class="companyName">
-                <img class="logo" src="images/signature.png" alt="">
-                <h1 className="nameBottom">Codes</h1>
+            <div class="landingContact">
+                <a href="">Contact Me></a>
             </div>
-            <h2>For Your Business</h2>
-            <!-- <button class="blueButton">Contact Me!</button> -->
-            <a href="#about"><i class="fas fa-long-arrow-alt-down"></i></a>
-        </section>
+        </div>
     </section>
-    <section class="about" id="about" >
-        <div class="wrapper clearfix">
-            <div class="aboutContainer">
-                <div class="whoAmI">
-                    <h2>Who</h2>
-                    <h2>Am   I</h2>
-                    <!-- <h2>A</h2> -->
+    <section id="about" class="about">
+        <div class="wrapper">
+            <h2>My Story</h2>
+            <div class="aboutMain">
+                <div class="headShot">
+                    <img src="images/profilePicCircle.png" alt="">
                 </div>
-                <img src="/images/profilePic.jpg" alt="">
                 <div class="aboutInfo">
-                    <h1>Aathavan Bagawan</h1>
-                    <div class="nameLine">
+                    <h3>As a Mad Scientist</h3>
+                    <p>At the tender age of 12, Aathavan nearly accidentally shot his brother in the eye with his homemade Rubber-Band-Powered-Dart-Shooting-HockeyStick-Of-Doom.
+                    From there he did the only logical thing and graduated university in 2015, eager and wide-eyed he was ready to join workforce!</p>
+                    <p class="redP">Would you like to see a historically accurate reenactment of how that went?</p>
+                    <button class="Show">Show</button>
+                    <button class="Hide">X</button>
+                    <div id="target">
+                        <img src="images/history.gif" alt="">
                     </div>
-                    <p class="topAboutP greyP">Hi! I am a web developer and recent grad of HackerYou! What initially attracted me to get into web development was
-                    my desire to create beautiful websites. Every website has a story to tell, and I want to be the one to tell it. With every
-                    project I complete the more interested I become in how that story is told. I believe there is more to it than just making the website look nice; we must be able to guide the user with a natural, almost intuitive experience.</p>
-                    <p class="bottomAboutP greyP">Going forward in my career I aim to always provide my users with this elevated experience. If you enjoy my work let us get
-                    in touch, and we can make a new story together.</p>
-                    <!-- <div class="infoProfessionalisim">
-                        <div class="outLine"></div>
-                        <div class="outLineContent">
-                            <h3>Professionalism</h3>
-                            <p class="greyP">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet laborum, atque facere dolores voluptas dolorem!</p>
-                        </div>
-                    </div> -->
+                    <h3>As a Web Developer</h3>
+                    <p>I believe every website has a story to tell, and I want to help to tell it. With every project I complete the more interested
+                    I become in how that story is told. I believe there is more to it than just making the website look nice; we must be able
+                    to guide the user through natural, intuitive experiences.</p>
                 </div>
             </div>
         </div>
-            <div class="sliderArrow">
-                <a href="#myWork"><i class="fas fa-long-arrow-alt-down"></i></a>
-            </div>
     </section>
-    <section class="myWork" id="myWork">
-        <div class="projectContainer projectOne ">
-            <div class="projectLink">
-                <h2>WesterBros</h2>
-                <p>React / Firebase</p>
-                <a href="https://wester-bros.firebaseapp.com">View Live <i class="fas fa-desktop"></i></a>
+    <section class="projects" id="projects">
+        <div class="wrapper">
+            <div class="projectLanding">
+                <h2>My Projects</h2>
             </div>
-        </div>
-        <div class="projectContainer projectTwo">
-            <div class="projectLink">
-                <h2>Movie Watch List</h2>
-                <p>React / Firebase / API Handling</p>
-                <a href="https://project6-2296b.firebaseapp.com">View Live <i class="fas fa-desktop"></i></a>
-            </div>
-        </div>
-        <div class="projectContainer projectThree">
-            <div class="projectLink">
-                <h2>BitRegret</h2>
-                <p>API Handling / JavaScript / jQuery</p>
-                <a href="https://shouldacouldawoulda.github.io/shouldaCouldaWoulda">View Live <i class="fas fa-desktop"></i></a>
-            </div>
-        </div>
-        <div class="projectContainer projectFour">
-            <div class="projectLink">
-                <h2>Over</h2>
-                <p>FlexBox / Sass / Responsive Design</p>
-                <a href="https://aathavan64.github.io/Over-conversion/">View Live <i class="fas fa-desktop"></i></a>
-            </div>
-        </div>
-        <!-- <div class="overlay">
-        </div> -->
-    </section>
-    <section class="myServices" id="myServices">
-        <h2>My Skills</h1>
-        <p class="greyP" >Here is a list of the skills I possess as well as the languages I am proficient in.</p>
-        <div class="wrapper clearfix">
-            <div class="servicesContainer clearfix">
-                <div class="languages">
-                    <div class="language">
-                        <div class="languageContainer">
-                            <i class="fab fa-html5"></i>
-                            <p>Html 5</p>
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="languageContainer">
-                            <i class="fab fa-css3-alt"></i>
-                            <p>CSS 3</p>
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="languageContainer">
-                            <i class="fas fa-object-group"></i>
-                            <p>Responsive Design</p>
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="languageContainer">
-                            <i class="fab fa-js-square"></i>
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="languageContainer">
-                            <i class="devicon-jquery-plain"></i>
-                            <p>jQuery</p>
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="languageContainer">
-                            <i class="fab fa-react"></i>
-                            <p>React</p>
-                        </div>
+            <div id="movieWatchList" class="projectHolder pictureAlignedLeft">
+                <div class="projectPicture">
+                    <div class="imageBorder">
+                        <img src="images/movieListScreen.png" alt="">
                     </div>
                 </div>
-                <div class="skills">
-                    <div class="skill">
-                        <p>Firebase</p>
-                    </div>
-                    <div class="skill">
-                        <p>Api Data Handling</p>
-                    </div>
-                    <div class="skill">
-                        <p>Sass - CSS preprocessing</p>
-                    </div>
-                    <div class="skill">
-                        <p>Version Control (Git/Github)</p>
-                    </div>
-                    <div class="skill">
-                        <p>Web-design / UX</p>
+                <div class="projectInfoContainer">
+                    <div class="projectInfo">
+                        <div class="projectTitle">
+                            <div class="projectLogo">
+                                <img src="images/movieListRed.png" alt="">
+                            </div>
+                            <h3>Movie Watch List</h3>
+                        </div>
+                        <div class="projectSkills">
+                            <h4>React</h4>
+                            <h4>Firebase</h4>
+                            <h4>API</h4>
+                            <h4>JS</h4>
+                            <h4>Responsive</h4>
+                            <h4>SASS</h4>
+                        </div>
+                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo facilis culpa. Illo dolorum odit excepturi totam
+                            libero ab odio minima eveniet consectetur facere dolor, quis molestiae sed nihil modi?
+                        </blockquote>
                     </div>
                 </div>
             </div>
+            <div id="bitRegret" class="projectHolder pictureAlignedRight">
+                <div class="projectPicture">
+                    <div class="imageBorder">
+                        <img src="images/bitRegretScreen.png" alt="">
+                    </div>
+                </div>
+                <div class="projectInfoContainer">
+                    <div class="projectInfo">
+                        <div class="projectTitle">
+                            <div class="projectLogo">
+                                <img src="images/bitRegretRed.png" alt="">
+                            </div>
+                            <h3>BitRegret</h3>
+                        </div>
+                        <div class="projectSkills">
+                            <h4>JS</h4>
+                            <h4>jQuery</h4>
+                            <h4>Responsive</h4>
+                            <h4>SASS</h4>
+                        </div>
+                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo facilis culpa. Illo dolorum odit excepturi totam
+                            libero ab odio minima eveniet consectetur facere dolor, quis molestiae sed nihil modi?
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div id="over" class="projectHolder pictureAlignedLeft">
+                <div class="projectPicture">
+                    <div class="imageBorder">
+                        <img src="images/overScreen.png" alt="">
+                    </div>
+                </div>
+                <div class="projectInfoContainer">
+                    <div class="projectInfo">
+                        <div class="projectTitle">
+                            <div class="projectLogo">
+                                <img src="images/overRed.png" alt="">
+                            </div>
+                            <h3>Project: Over</h3>
+                        </div>
+                        <div class="projectSkills">
+                            <h4>FlexBox</h4>
+                            <h4>SASS</h4>
+                            <h4>Responsive Design</h4>
+                        </div>
+                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo facilis culpa. Illo dolorum odit excepturi totam
+                            libero ab odio minima eveniet consectetur facere dolor, quis molestiae sed nihil modi?
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div id="westerBros" class="projectHolder pictureAlignedRight">
+                <div class="projectPicture">
+                    <div class="imageBorder">
+                        <img src="images/westerBrosScreen.png" alt="">
+                    </div>
+                </div>
+                <div class="projectInfoContainer">
+                    <div class="projectInfo">
+                        <div class="projectTitle">
+                            <div class="projectLogo">
+                                <img src="images/westerbrosRed.png" alt="">
+                            </div>
+                            <h3>WesterBros</h3>
+                        </div>
+                        <div class="projectSkills">
+                            <h4>React</h4>
+                            <h4>Firebase</h4>
+                            <h4>JS</h4>
+                            <h4>Responsive</h4>
+                            <h4>SASS</h4>
+                        </div>
+                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo facilis culpa. Illo dolorum odit excepturi
+                            totam libero ab odio minima eveniet consectetur facere dolor, quis molestiae sed nihil modi?
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="projectHolder pictureAlignedLeft">
+                <div class="projectPicture">
+                    <div class="imageBorder">
+                        <img src="images/westerBrosScreen.png" alt="">
+                    </div>
+                </div>
+                <div class="projectInfoContainer">
+                    <div class="projectInfo">
+                        <div class="projectTitle">
+                            <div class="projectLogo">
+                                <img src="images/comingSoonRed.png" alt="">
+                            </div>
+                            <h3>Coming Soon!</h3>
+                        </div>
+                        <div class="projectSkills">
+                            <h4>React</h4>
+                            <h4>Firebase</h4>
+                            <h4>JS</h4>
+                            <h4>Responsive</h4>
+                            <h4>SASS</h4>
+                        </div>
+                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo facilis culpa. Illo dolorum odit excepturi totam
+                            libero ab odio minima eveniet consectetur facere dolor, quis molestiae sed nihil modi?
+                        </blockquote>
+                    </div>
+                </div>
         </div>
     </section>
     <footer>
-        <div class="footerMain">
-            <button class="toggleButton">Contact Me</button>
-            <div class="formContainer formOff">
-                <div class="formContainerInner" >
-                    <button class="toggleButton closeButton" ><i class="fas fa-window-close"></i></button>
-                    <form action="https://formspree.io/aathavan.bagawan@gmail.com" method="POST">
-                        <input class="name" type="text" name="name" placeholder="Name" >
-                        <input type="email" class="formEmail" name="_replyto" placeholder="Email">
-                        <textarea name="message" placeholder="Your message"></textarea>
-                        <!-- <button type="submit">Submit</button> -->
-                        <input type="submit" value="Submit">
-                    </form>
+        <div class="wrapper">           
+            <div class="footerInfo">
+                <h2>Like My Work?</h2>
+                <p>I would love to hear from you!</p>
+                <h2>Aathavan.bagawan@gmail.com</h2>
+                <div class="socialIcons">
+                    <a href="https://www.linkedin.com/in/aathavanbagawan/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Aathavan64">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="https://twitter.com/AathavanBagawan">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
                 </div>
             </div>
-            <img class="logo" src="images/signature.png" alt="">
-            <div class="socialIcons">
-                <a href="https://www.linkedin.com/in/aathavanbagawan/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Aathavan64"><i class="fab fa-github-square"></i></a>
-                <a href="https://twitter.com/AathavanBagawan"><i class="fab fa-twitter-square"></i></a>
-            </div>
-            <p>"To err is human – and to blame it on a computer is even more so." - My inspector </p>
-        </div>
+        </div>    
     </footer>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
