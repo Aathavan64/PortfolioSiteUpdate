@@ -48,3 +48,11 @@ $('button.westerBrosScroll').on('click', function () {
     return false;
 });
 
+$('.aboutScroll').on('click', function () {
+    $.smoothScroll({
+        scrollTarget: '#about'
+    });
+    return false;
+});
+
+

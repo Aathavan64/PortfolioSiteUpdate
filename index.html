@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,600,700" rel="stylesheet">
 </head>
 <body>
     <section class="landing">
@@ -17,9 +18,9 @@
             <img src="images/logoLion.png" alt="">
             <h1>Aathavan Bagawan</h1>
             <div class="landingSocialIcons">
-                <button>
+                <!-- <button>
                     <i class="fa fas fa-envelope-square"></i>
-                </button>
+                </button> -->
                 <a href="https://www.linkedin.com/in/aathavanbagawan/">
                     <i class="fa fab fa-linkedin"></i>
                 </a>
@@ -32,7 +33,7 @@
             <div class="landingAbout">
                 <h2>Hello, I'm Aathavan</h2>
                 <p>I'm a web developer</p>
-                <a href="">More About Me ></a>
+                <a class="aboutScroll" href="">More About Me ></a>
             </div>
             <div class="landingProjects">
                 <h2>
@@ -80,31 +81,33 @@
                 </div>
             </div>
             <div class="landingContact">
-                <a href="">Contact Me></a>
+                <a class="contactScroll" href="">Contact Me></a>
             </div>
         </div>
     </section>
-    <section id="about" class="about">
+    <section id="about" class="about bM">
         <div class="wrapper">
-            <h2>My Story</h2>
-            <div class="aboutMain">
-                <div class="headShot">
-                    <img src="images/profilePicCircle.png" alt="">
-                </div>
-                <div class="aboutInfo">
-                    <h3>As a Mad Scientist</h3>
-                    <p>At the tender age of 12, Aathavan nearly accidentally shot his brother in the eye with his homemade Rubber-Band-Powered-Dart-Shooting-HockeyStick-Of-Doom.
-                    From there he did the only logical thing and graduated university in 2015, eager and wide-eyed he was ready to join workforce!</p>
-                    <p class="redP">Would you like to see a historically accurate reenactment of how that went?</p>
-                    <button class="Show">Show</button>
-                    <button class="Hide">X</button>
-                    <div id="target">
-                        <img src="images/history.gif" alt="">
+            <h1>My Story</h1>
+            <div class="aboutContainer">
+                <div class="aboutMain">
+                    <div class="headShot">
+                        <img src="images/profilePicCircle.png" alt="">
                     </div>
-                    <h3>As a Web Developer</h3>
-                    <p>I believe every website has a story to tell, and I want to help to tell it. With every project I complete the more interested
-                    I become in how that story is told. I believe there is more to it than just making the website look nice; we must be able
-                    to guide the user through natural, intuitive experiences.</p>
+                    <div class="aboutInfo">
+                        <h2>As a Mad Scientist</h2>
+                        <p class="bM">At the tender age of 12, Aathavan nearly accidentally shot his brother in the eye with his homemade Rubber-Band-Powered-Dart-Shooting-HockeyStick-Of-Doom.
+                        From there he did the only logical thing and graduated university in 2015, eager and wide-eyed he was ready to join workforce!</p>
+                        <p class="redP">Would you like to see a historically accurate reenactment of how that went?</p>
+                        <button class="Show">Show</button>
+                        <button class="Hide">X</button>
+                        <div class="gif" id="target">
+                            <img src="images/history.gif" alt="">
+                        </div>
+                        <h2 class="aboutThirdSpacing">As a Web Developer</h2>
+                        <p>I believe every website has a story to tell, and I want to help to tell it. With every project I complete the more interested
+                        I become in how that story is told. I believe there is more to it than just making the website look nice; we must be able
+                        to guide the user through natural, intuitive experiences.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,13 +115,11 @@
     <section class="projects" id="projects">
         <div class="wrapper">
             <div class="projectLanding">
-                <h2>My Projects</h2>
+                <h1>My Projects</h1>
             </div>
             <div id="movieWatchList" class="projectHolder pictureAlignedLeft">
                 <div class="projectPicture">
-                    <div class="imageBorder">
-                        <img src="images/movieListScreen.png" alt="">
-                    </div>
+                    <img src="images/movieListScreen.png" alt="">
                 </div>
                 <div class="projectInfoContainer">
                     <div class="projectInfo">
@@ -126,7 +127,7 @@
                             <div class="projectLogo">
                                 <img src="images/movieListRed.png" alt="">
                             </div>
-                            <h3>Movie Watch List</h3>
+                            <h2>Movie Watch List</h2>
                         </div>
                         <div class="projectSkills">
                             <h4>React</h4>
@@ -136,17 +137,15 @@
                             <h4>Responsive</h4>
                             <h4>SASS</h4>
                         </div>
-                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo facilis culpa. Illo dolorum odit excepturi totam
-                            libero ab odio minima eveniet consectetur facere dolor, quis molestiae sed nihil modi?
-                        </blockquote>
+                        <p>
+                            test12
+                        </p>
                     </div>
                 </div>
             </div>
             <div id="bitRegret" class="projectHolder pictureAlignedRight">
                 <div class="projectPicture">
-                    <div class="imageBorder">
-                        <img src="images/bitRegretScreen.png" alt="">
-                    </div>
+                    <img src="images/bitRegretScreen.png" alt="">
                 </div>
                 <div class="projectInfoContainer">
                     <div class="projectInfo">
@@ -154,7 +153,7 @@
                             <div class="projectLogo">
                                 <img src="images/bitRegretRed.png" alt="">
                             </div>
-                            <h3>BitRegret</h3>
+                            <h2>BitRegret</h2>
                         </div>
                         <div class="projectSkills">
                             <h4>JS</h4>
@@ -162,17 +161,15 @@
                             <h4>Responsive</h4>
                             <h4>SASS</h4>
                         </div>
-                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo facilis culpa. Illo dolorum odit excepturi totam
-                            libero ab odio minima eveniet consectetur facere dolor, quis molestiae sed nihil modi?
-                        </blockquote>
+                        <p>
+                            test12
+                        </p>
                     </div>
                 </div>
             </div>
             <div id="over" class="projectHolder pictureAlignedLeft">
                 <div class="projectPicture">
-                    <div class="imageBorder">
-                        <img src="images/overScreen.png" alt="">
-                    </div>
+                    <img src="images/overScreen.png" alt="">
                 </div>
                 <div class="projectInfoContainer">
                     <div class="projectInfo">
@@ -180,24 +177,22 @@
                             <div class="projectLogo">
                                 <img src="images/overRed.png" alt="">
                             </div>
-                            <h3>Project: Over</h3>
+                            <h2>Project: Over</h2>
                         </div>
                         <div class="projectSkills">
                             <h4>FlexBox</h4>
                             <h4>SASS</h4>
                             <h4>Responsive Design</h4>
                         </div>
-                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo facilis culpa. Illo dolorum odit excepturi totam
-                            libero ab odio minima eveniet consectetur facere dolor, quis molestiae sed nihil modi?
-                        </blockquote>
+                        <p>
+                            test12
+                        </p>
                     </div>
                 </div>
             </div>
             <div id="westerBros" class="projectHolder pictureAlignedRight">
                 <div class="projectPicture">
-                    <div class="imageBorder">
-                        <img src="images/westerBrosScreen.png" alt="">
-                    </div>
+                    <img src="images/westerBrosScreen.png" alt="">
                 </div>
                 <div class="projectInfoContainer">
                     <div class="projectInfo">
@@ -205,7 +200,7 @@
                             <div class="projectLogo">
                                 <img src="images/westerbrosRed.png" alt="">
                             </div>
-                            <h3>WesterBros</h3>
+                            <h2>WesterBros</h2>
                         </div>
                         <div class="projectSkills">
                             <h4>React</h4>
@@ -214,17 +209,15 @@
                             <h4>Responsive</h4>
                             <h4>SASS</h4>
                         </div>
-                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo facilis culpa. Illo dolorum odit excepturi
-                            totam libero ab odio minima eveniet consectetur facere dolor, quis molestiae sed nihil modi?
-                        </blockquote>
+                        <p>
+                            test12
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="projectHolder pictureAlignedLeft">
                 <div class="projectPicture">
-                    <div class="imageBorder">
                         <img src="images/westerBrosScreen.png" alt="">
-                    </div>
                 </div>
                 <div class="projectInfoContainer">
                     <div class="projectInfo">
@@ -232,7 +225,7 @@
                             <div class="projectLogo">
                                 <img src="images/comingSoonRed.png" alt="">
                             </div>
-                            <h3>Coming Soon!</h3>
+                            <h2>Coming Soon!</h2>
                         </div>
                         <div class="projectSkills">
                             <h4>React</h4>
@@ -241,9 +234,9 @@
                             <h4>Responsive</h4>
                             <h4>SASS</h4>
                         </div>
-                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo facilis culpa. Illo dolorum odit excepturi totam
-                            libero ab odio minima eveniet consectetur facere dolor, quis molestiae sed nihil modi?
-                        </blockquote>
+                        <p>
+                            test12
+                        </p>
                     </div>
                 </div>
         </div>
@@ -253,7 +246,6 @@
             <div class="footerInfo">
                 <h2>Like My Work?</h2>
                 <p>I would love to hear from you!</p>
-                <h2>Aathavan.bagawan@gmail.com</h2>
                 <div class="socialIcons">
                     <a href="https://www.linkedin.com/in/aathavanbagawan/">
                         <i class="fab fa-linkedin"></i>

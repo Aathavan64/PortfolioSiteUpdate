@@ -37,3 +37,16 @@ footer .wrapper {
     max-height: 60vh;
 }
 
+footer .socialIcons {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+footer .socialIcons a {
+    display: block;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+

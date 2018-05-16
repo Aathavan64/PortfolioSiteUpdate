@@ -1,16 +1,15 @@
 .about {
- color: black;
- background: white;
+    color: black;
+    background: white;
 }
 
-.about h2 {
+.about h1 {
     text-align: center;
 }
 
-.about .aboutMeContainer {
+.about .aboutContainer {
     display: flex;
-    min-height: 90vh;
-    
+    min-height: 95vh;
 }
 
 .aboutMain {
@@ -60,6 +59,31 @@
     padding: 5px 5px;
 }
 
-#target {
+.about h2 {
+    margin-bottom: 25px;
+}
+
+.bM{
+   margin-bottom: 25px; 
+}
+
+.aboutThirdSpacing {
+    margin-top: 25px;
+}
+
+@media (max-width: 850px) {
+    .aboutMain {
+        flex-direction: column;
+    }
+
+    .headShot {
+        margin-bottom: 25px;
+    }
+
+    .aboutInfo {
+        width: 80%;
+        margin: 0 auto;
+    }
+
 
 }

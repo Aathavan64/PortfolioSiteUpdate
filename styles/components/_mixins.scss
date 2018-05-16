@@ -1,0 +1,47 @@
+@mixin blackParagraph {
+    font-family: 'Asap', sans-serif;
+    font-size: 1rem;
+}
+
+@mixin redParagraph {
+    font-family: 'Asap', sans-serif;
+    font-size: 1rem;
+    color: #ac0014;
+}
+
+
+@mixin redSmallLink {
+    font-family: 'Asap', sans-serif;
+    color: #ac0014;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+@mixin redLargeLink {
+    font-family: 'Asap', sans-serif;
+    color: #D20E25;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 2px solid
+}
+
+@mixin largeMainHeader {
+    font-family: 'Metal Mania', cursive;
+    color: black;
+    font-size: 2.5rem;
+}
+
+@mixin largeSecondaryHeader {
+    font-family: 'Metal Mania', cursive;
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+@mixin skillsTag {
+    font-family: 'Pangolin', cursive;
+    color: white;
+    padding: 1px 2px;
+    border-radius: 2px;
+    background-color: #ac0014;
+}
