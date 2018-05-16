@@ -136,9 +136,11 @@ body {
   font-size: 16px; }
 
 .wrapper {
-  width: 96.3%;
+  width: 100%;
   max-width: 1232px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%; }
 
 h1, h2, h3, h4, p {
   margin: 0; }
@@ -147,27 +149,21 @@ a {
   color: black;
   text-decoration: none; }
 
-.logo {
-  width: 320px; }
-
-.fa-long-arrow-alt-down {
-  font-size: 2rem; }
-
 img {
   display: block;
   width: 100%; }
 
+@keyframes pop {
+  50% {
+    transform: scale(1.2); } }
+
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+@media (max-width: 850px) {
   .wrapper {
     width: 100%;
-    max-width: 940px; } }
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  .wrapper {
-    width: 92%;
-    max-width: 706px; } }
+    max-width: 850px;
+    padding-left: 10%;
+    padding-right: 10%; } }
 
 .landingAbout p {
   font-family: 'Asap', sans-serif;
@@ -264,6 +260,7 @@ footer .socialIcons a {
   font-size: 1.2rem;
   font-weight: bold;
   border-bottom: 2px solid;
+  transition: border .6s linear;
   background: none;
   border: none;
   padding: 0;
@@ -329,11 +326,6 @@ footer .socialIcons a {
 @media (max-width: 850px) {
   .projectLanding {
     justify-content: center; }
-  .projects .wrapper {
-    width: 100%;
-    max-width: 850px;
-    padding-left: 2.5%;
-    padding-right: 2.5%; }
   .pictureAlignedRight .projectPicture {
     order: 0; }
   .projectHolder .projectPicture {
@@ -345,14 +337,16 @@ footer .socialIcons a {
     margin-bottom: 25px; }
   .projectPicture,
   .projectInfoContainer {
-    width: 80%;
     align-self: center; }
+  .projectPicture {
+    width: 100%; }
+  .projectInfoContainer {
+    width: 100%; }
   .projectTitle,
   .projectSkills {
     justify-content: center; } }
 
-.landing {
-  color: black;
+.landing .wrapper {
   min-height: 100vh;
   display: flex;
   align-items: center; }
@@ -404,11 +398,53 @@ footer .socialIcons a {
 .landingInfo > div {
   margin-bottom: 25px; }
 
+.projectButtons button {
+  position: relative;
+  transition: all .3s ease; }
+
+.projectButtons button:before, .projectButtons button:after {
+  font-size: 1.5rem;
+  position: absolute;
+  top: -15px;
+  padding: 10px 10px;
+  transition: all .1s ease;
+  will-change: transform; }
+
+.projectButtons button:before {
+  content: '[';
+  left: -20px;
+  transform: rotateY(-90deg) scale(0); }
+
+.projectButtons button:after {
+  content: ']';
+  right: -20px;
+  transform: rotateY(90deg) scale(0); }
+
+.projectButtons button:hover:before, .projectButtons button:hover:after {
+  transform: rotateY(0deg) scale(1); }
+
+.projectButtons button:hover:before {
+  left: -2; }
+
+.projectButtons button:hover:after {
+  right: 2; }
+
+.projectButtons button:hover {
+  border-color: transparent; }
+
+.landingAbout a:hover,
+.landingProjects a:hover,
+.landingContact a:hover {
+  border-bottom: 2px solid #ac0014; }
+
+.landingSocialIcons a:hover,
+.socialIcons a:hover {
+  animation: pop 0.3s linear 1; }
+
 @media (max-width: 850px) {
-  .landing {
+  .wrapper {
     flex-direction: column;
-    align-items: initial;
-    margin-left: 5%; }
+    align-items: initial; }
   .landingBrand {
     margin: auto;
     align-self: center;
@@ -480,7 +516,7 @@ footer .socialIcons a {
   .headShot {
     margin-bottom: 25px; }
   .aboutInfo {
-    width: 80%;
+    width: 100%;
     margin: 0 auto; } }
 
 footer {

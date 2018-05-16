@@ -8,9 +8,11 @@ body {
 }
 
 .wrapper{
-    width: 96.3%;
+    width: 100%;
     max-width: 1232px;
     margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 h1,h2,h3,h4,p {
@@ -22,31 +24,23 @@ a {
     text-decoration: none;
 }
 
-.logo {
-    width: 320px;
-}
-
-.fa-long-arrow-alt-down {
-    font-size: 2rem;
-}
-
 img {
     display: block;
     width: 100%;
 }
 
+@keyframes pop{
+  50%  {transform: scale(1.2);}
+}
+
+
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+@media (max-width: 850px) {
     .wrapper {
         width: 100%;
-        max-width: 940px;
+        max-width: 850px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-    .wrapper {
-        width: 92%;
-        max-width: 706px;
-    }
-}

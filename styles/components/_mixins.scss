@@ -22,7 +22,8 @@
     color: #D20E25;
     font-size: 1.2rem;
     font-weight: bold;
-    border-bottom: 2px solid
+    border-bottom: 2px solid;
+    transition: border .6s linear; 
 }
 
 @mixin largeMainHeader {
@@ -44,4 +45,52 @@
     padding: 1px 2px;
     border-radius: 2px;
     background-color: #ac0014;
+}
+
+@mixin buttonAnimation {
+   & {
+
+	
+	position: relative;
+	transition: all .3s ease;
+    }
+
+    &:before,
+    &:after {
+	    font-size: 1.5rem;
+	    position: absolute;
+	    top: -15px;
+	    padding: 10px 10px;
+	    transition: all .1s ease;
+	    will-change: transform;
+    }
+
+    &:before {
+        content: '[';
+        left: -20px;
+        transform: rotateY(-90deg) scale(0);
+    }
+
+    &:after {
+        content: ']';
+        right: -20px;
+        transform: rotateY(90deg) scale(0);
+    }
+
+    &:hover:before,
+    &:hover:after {
+        transform: rotateY(0deg) scale(1);
+    }
+
+    &:hover:before {
+        left: -2;
+    }
+
+    &:hover:after {
+        right: 2;
+    }
+    
+    &:hover {
+        border-color: transparent;
+    }
 }

@@ -76,13 +76,7 @@
     .projectLanding {
         justify-content: center;
     }
-
-    .projects .wrapper {
-        width:100%;
-        max-width: 850px;
-        padding-left: 2.5%;
-        padding-right: 2.5%;
-    }
+    
     .pictureAlignedRight .projectPicture {
         order: 0;
     }
@@ -102,8 +96,15 @@
 
     .projectPicture,
     .projectInfoContainer {
-        width: 80%;
         align-self: center;
+    }
+
+    .projectPicture {
+        width: 100%
+    }
+
+    .projectInfoContainer {
+        width: 100%;
     }
 
     .projectTitle,
