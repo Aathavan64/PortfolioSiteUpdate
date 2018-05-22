@@ -24,9 +24,6 @@
     @include skillsTag;
 }
 
-
-
-
 .landing .svg-inline--fa {
     font-size: 2rem;
 }
@@ -34,6 +31,7 @@
 ////About Page
 .about h1 {
     @include largeMainHeader;
+    margin-bottom: 50px;
 }
 
 .about h2 {
@@ -44,7 +42,7 @@
     @include blackParagraph;
 }
 
-.redP {
+.aboutInfo .redP {
     @include redParagraph;
 }
 
@@ -52,6 +50,7 @@
 ///Project Page
 .projectLanding h1 {
     @include largeMainHeader;
+    margin-bottom: 50px;
 }
 
 .projectTitle h2 {
@@ -67,9 +66,26 @@
     @include blackParagraph;
 }
 
+.liveLinks a {
+    @include redSmallLink;
+    font-size: 1rem;
+}
+
+.liveLinks a:hover {
+    border-bottom: 2px solid #ac0014;
+}
+
+.pictureAlignedRight p {
+    text-align: right;
+}
+
 ///Footer Page
 footer h2 {
     @include largeMainHeader;
+}
+
+footer p {
+    @include redSmallLink;
 }
 
 .aboutInfo button {
@@ -79,5 +95,10 @@ footer h2 {
 
 footer .socialIcons a {
     font-size: 2rem;
+}
+
+.attribution h4 {
+    @include skillsTag;
+    font-size:.7rem;
 }
 

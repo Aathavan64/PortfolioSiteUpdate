@@ -7,9 +7,14 @@
     text-align: center;
 }
 
+.about .wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .about .aboutContainer {
     display: flex;
-    min-height: 95vh;
+    // min-height: 95vh;
 }
 
 .aboutMain {
@@ -37,7 +42,7 @@
 
 .headShot img {
     margin: auto;
-    width: 49.5%;
+    width: 261px;
     border: 3px solid #ac0014;
     border-radius: 50%;
 }
@@ -59,6 +64,11 @@
     padding: 5px 5px;
 }
 
+.gifPlayer {
+    width: 300px;
+    margin: 0 auto;
+}
+
 .about h2 {
     margin-bottom: 25px;
 }
@@ -78,11 +88,17 @@
 
     .headShot {
         margin-bottom: 25px;
+        background-position: center center;
+        width: 100%;
     }
 
     .aboutInfo {
         width: 100%;
         margin: 0 auto;
+    }
+
+    .headShot img {
+        width: 228px;
     }
 
 

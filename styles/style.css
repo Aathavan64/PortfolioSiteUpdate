@@ -202,7 +202,8 @@ img {
 .about h1 {
   font-family: 'Metal Mania', cursive;
   color: black;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  margin-bottom: 50px; }
 
 .about h2 {
   font-family: 'Metal Mania', cursive;
@@ -214,15 +215,17 @@ img {
   font-family: 'Asap', sans-serif;
   font-size: 1rem; }
 
-.redP {
+.aboutInfo .redP {
   font-family: 'Asap', sans-serif;
   font-size: 1rem;
-  color: #ac0014; }
+  color: #D20E25;
+  text-align: center; }
 
 .projectLanding h1 {
   font-family: 'Metal Mania', cursive;
   color: black;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  margin-bottom: 50px; }
 
 .projectTitle h2 {
   font-family: 'Metal Mania', cursive;
@@ -242,10 +245,29 @@ img {
   font-family: 'Asap', sans-serif;
   font-size: 1rem; }
 
+.liveLinks a {
+  font-family: 'Asap', sans-serif;
+  color: #ac0014;
+  font-size: .8rem;
+  font-weight: bold;
+  font-size: 1rem; }
+
+.liveLinks a:hover {
+  border-bottom: 2px solid #ac0014; }
+
+.pictureAlignedRight p {
+  text-align: right; }
+
 footer h2 {
   font-family: 'Metal Mania', cursive;
   color: black;
   font-size: 2.5rem; }
+
+footer p {
+  font-family: 'Asap', sans-serif;
+  color: #ac0014;
+  font-size: .8rem;
+  font-weight: bold; }
 
 .aboutInfo button {
   color: white;
@@ -253,6 +275,14 @@ footer h2 {
 
 footer .socialIcons a {
   font-size: 2rem; }
+
+.attribution h4 {
+  font-family: 'Pangolin', cursive;
+  color: white;
+  padding: 1px 2px;
+  border-radius: 2px;
+  background-color: #ac0014;
+  font-size: .7rem; }
 
 .projectButtons button {
   font-family: 'Asap', sans-serif;
@@ -269,6 +299,10 @@ footer .socialIcons a {
 
 .projects {
   color: black; }
+
+.projects .wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .projectLanding {
   min-height: 5vh;
@@ -298,10 +332,6 @@ footer .socialIcons a {
 .projectSkills {
   margin-bottom: 10px; }
 
-.projectInfo blockquote {
-  margin: 0;
-  margin-bottom: 10px; }
-
 .projectTitle {
   display: flex;
   align-items: center; }
@@ -313,26 +343,41 @@ footer .socialIcons a {
 .projectInfo {
   width: 90%; }
 
+.liveLinks {
+  margin-bottom: 10px;
+  display: flex; }
+
 .projectPicture img {
   border: 5px solid #ac0014;
   border-radius: 5px; }
 
+.liveLinks a:not(:last-child) {
+  margin-right: 5px; }
+
 .projectSkills {
   display: flex; }
 
-.projectSkills h4 {
+.projectSkills h4:not(:last-child) {
   margin-right: 5px; }
 
+.projectLanding {
+  justify-content: center; }
+
+.pictureAlignedRight .projectTitle,
+.pictureAlignedRight .projectSkills,
+.pictureAlignedRight .liveLinks {
+  justify-content: flex-end; }
+
+.pictureAlignedRight .projectInfoContainer {
+  justify-content: flex-end; }
+
 @media (max-width: 850px) {
-  .projectLanding {
-    justify-content: center; }
   .pictureAlignedRight .projectPicture {
     order: 0; }
   .projectHolder .projectPicture {
     order: 9; }
   .projectHolder {
-    flex-direction: column;
-    margin-bottom: 50px; }
+    flex-direction: column; }
   .projectPicture {
     margin-bottom: 25px; }
   .projectPicture,
@@ -343,8 +388,21 @@ footer .socialIcons a {
   .projectInfoContainer {
     width: 100%; }
   .projectTitle,
-  .projectSkills {
-    justify-content: center; } }
+  .projectSkills,
+  .liveLinks {
+    justify-content: center; }
+  .pictureAlignedRight .projectTitle,
+  .pictureAlignedRight .projectSkills,
+  .pictureAlignedRight .liveLinks {
+    justify-content: center; }
+  .pictureAlignedRight .projectInfoContainer {
+    justify-content: flex-start; }
+  .pictureAlignedRight p {
+    text-align: left; }
+  .projectInfoContainer p {
+    margin-bottom: 10px; }
+  .projectInfo {
+    margin: 0 auto; } }
 
 .landing .wrapper {
   min-height: 100vh;
@@ -459,9 +517,12 @@ footer .socialIcons a {
 .about h1 {
   text-align: center; }
 
+.about .wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
 .about .aboutContainer {
-  display: flex;
-  min-height: 95vh; }
+  display: flex; }
 
 .aboutMain {
   margin: auto;
@@ -483,7 +544,7 @@ footer .socialIcons a {
 
 .headShot img {
   margin: auto;
-  width: 49.5%;
+  width: 261px;
   border: 3px solid #ac0014;
   border-radius: 50%; }
 
@@ -501,6 +562,10 @@ footer .socialIcons a {
   width: auto;
   padding: 5px 5px; }
 
+.gifPlayer {
+  width: 300px;
+  margin: 0 auto; }
+
 .about h2 {
   margin-bottom: 25px; }
 
@@ -514,10 +579,14 @@ footer .socialIcons a {
   .aboutMain {
     flex-direction: column; }
   .headShot {
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    background-position: center center;
+    width: 100%; }
   .aboutInfo {
     width: 100%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .headShot img {
+    width: 228px; } }
 
 footer {
   color: black;
@@ -562,3 +631,14 @@ footer .socialIcons a {
   display: block;
   margin-left: 2.5px;
   margin-right: 2.5px; }
+
+.attribution {
+  display: flex;
+  justify-content: center; }
+
+.attribution h4 {
+  margin-right: 5px;
+  letter-spacing: 1px; }
+
+.attTop {
+  margin-bottom: 5px; }
